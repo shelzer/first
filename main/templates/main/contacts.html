@@ -1,23 +1,16 @@
 {% extends "main/index.html" %}
 
-{% block title %}{{ title }}{% endblock title %}
+{% block title %}Контакты{% endblock title %}
 
 {% block content %}
 <div class="features">
-    <h1>{{ title }}</h1>
+    <h1>Контакты</h1>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <button class='btn btn-warning'>Тыкни</button>
-    
+    <button class='btn btn-danger'>Тыкни</button>
+
     {% for i in values %}
-        {% if i == 'Hello' %}
-           
-            <p>{{ i|upper }}</p>
-
-        {% endif %}
-    {% endfor %}
-
-    {% for i in obj %}
         <p>{{ i }}</p>
     {% endfor %}
+
 </div>
 {% endblock content %}

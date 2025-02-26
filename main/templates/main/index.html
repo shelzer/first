@@ -16,8 +16,10 @@
         <h3>Навигация</h3>
         <ul>
             <a href="{% url "home" %}"><li><i class="fa-solid fa-house"></i> Главная</li></a>
+            <a href="{% url "news_home" %}"><li><i class="fa-solid fa-users-rectangle"></i> Новости</li></a>
             <a href="{% url "about" %}"><li><i class="fa-solid fa-users-rectangle"></i> О нас</li></a>
             <a href="{% url "contacts" %}"><li><i class="fa-solid fa-address-book"></i> Контакты</li></a>
+            <a href="{% url "create" %}"><li><button class="btn btn-info"><i class="fa-solid fa-plus-circle"></i> Добавить запись</li></a>
         </ul>
     </aside>
     <main>
